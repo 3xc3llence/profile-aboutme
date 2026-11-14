@@ -1,6 +1,6 @@
 // Typing effect for the hero line
 const t=document.getElementById('type');
-if(t){const roles=['a Software Developer','an API Builder','a Mobile App Developer','a Rust Tinkerer'];
+if(t){const roles=['a Software Developer','an API Builder','a Mobile App Developer'];
  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
  if(reduce){t.textContent="I'm "+roles[0]}else{let r=0,c=0,del=false;
  (function tick(){const w=roles[r];t.textContent="I'm "+w.slice(0,c);

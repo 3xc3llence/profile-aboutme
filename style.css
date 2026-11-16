@@ -67,3 +67,12 @@ td,th{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
 @media(max-width:760px){.grid,.feat,.two{grid-template-columns:1fr}.hero{padding-top:56px}nav{gap:16px}.card{flex-direction:column}.feat{gap:24px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .grid>.card:last-child:nth-child(odd){grid-column:1/-1}
+.pcard{flex-direction:column;padding:0;overflow:hidden;gap:0}
+.pcard .pbody{padding:20px 22px 24px}
+.pcard h3{font:600 18px/1.3 var(--f)}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.shots img{width:100%;height:170px;object-fit:cover;object-position:top left;display:block}
+.shots img:only-child,.shots .term:only-child{grid-column:1/-1}
+.term{height:170px;display:grid;align-items:center;padding:0 24px;background:#0d0618;font:13px/1.7 var(--mono);color:#d9c8f0;white-space:pre;overflow:hidden}
+.term em{color:var(--p);font-style:normal}
+@media(max-width:760px){.shots img,.term{height:140px}}
